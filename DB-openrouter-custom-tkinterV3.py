@@ -14,13 +14,7 @@ models = {}
 root = None # Placeholder, set later
 
 # 1. Get key from .env first; temporary fallback kept for immediate testing.
-#    SECURITY NOTE: Remove the fallback string and ensure it's in your .env file!
-#api_key = os.getenv("OPENAI_API_KEY")
-#if not api_key:
-#    api_key = "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"
-#    print("WARNING: Using hardcoded API key fallback. Add your key to .env and remove this line for safety.")
-
-api_key = os.getenv("OPENAI_API_KEY", "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")
+api_key = os.getenv("OPENAI_API_KEY", "OPEN_ROUTER_API_KEY")
 
 # Initial system message layout
 INITIAL_SYSTEM_MESSAGE = {"role": "system", "content": "You are a helpful assistant."}
