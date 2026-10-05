@@ -29,5 +29,5 @@ jobs:
     - name: Upload Executable
       uses: actions/upload-artifact@v4
       with:
-        name: free-chatBot-windows-exe
-        path: dist/free-chatBot.exe
+        name: DB-openrouter-custom-tkinterV3-windows-exe
+        path: dist/DB-openrouter-custom-tkinterV3.exe
