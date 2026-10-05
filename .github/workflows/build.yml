@@ -10,10 +10,10 @@ jobs:
 
     steps:
     - name: Checkout Code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v4.2.2
 
     - name: Set up Python
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v5.3.0
       with:
         python-version: '3.11'
 
@@ -27,7 +27,7 @@ jobs:
         pyinstaller --onefile --noconsole DB-openrouter-custom-tkinterV3.py
 
     - name: Upload Executable
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v4.4.3
       with:
         name: DB-openrouter-custom-tkinterV3-windows-exe
         path: dist/DB-openrouter-custom-tkinterV3.exe
